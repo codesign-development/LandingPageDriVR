@@ -1,0 +1,70 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  overflow: hidden;
+
+}
+
+/* importar y asignar la fuente deseada */
+/* Tamaño de la fuente min 12px a 320 - max 24 px a 1920 */
+p{
+  /* font-family: "FuturaMedium"; */
+  font-size: calc(1.125rem + ((1vw - 19.2px) * 0.375));
+  line-height: 30px;
+  color: #fff;
+}
+h4{ /*1920 -  32px  320 - 18px*/
+  /* font-family: "FuturaBlack"; */
+  font-size: calc(2rem + ((1vw - 19.2px) * 0.875));
+  color: #fff;
+}
+input{
+  /* font-family: "FuturaMedium"; */
+  font-size: calc(1.125rem + ((1vw - 19.2px) * 0.375));
+  line-height: 20px;
+  border: 2px solid var(--green);
+  height: 28px;
+  border-radius: 8px;
+  outline: none
+}
+button{/*fuente min 12px a 320 - max 24 px a 1920 */
+  padding: 12px 14px;
+  border-radius: 8px;
+  /* font-family: "FuturaBlack"; */
+  font-size: calc(1.125rem + ((1vw - 19.2px) * 0.375));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+button:active{
+  transform: translateY(1px);
+}
+
+.App{
+  width: 100%;
+  position: relative;
+}
+.App>div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+@media (max-width: 320px) {
+  p {
+    font-size: 12px;
+  }
+  h4{ 
+    font-size: 18px;
+  }
+}
